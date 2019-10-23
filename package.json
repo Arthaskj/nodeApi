@@ -1,0 +1,43 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "node全能接口",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "restart": "forever restart app.js",
+    "start": "forever start app.js"
+  },
+  "author": "kj",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^5.0.1",
+    "import": "0.0.6",
+    "mysql": "^2.16.0",
+    "nodemailer": "^5.1.1",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "querystring": "^0.2.0",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "typescript": "^3.5.3",
+    "typescript-cli": "^0.1.0",
+    "wechat": "^2.1.0",
+    "wechat-api": "^1.35.1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@118.89.227.226:/Git/node.git"
+  }
+}
