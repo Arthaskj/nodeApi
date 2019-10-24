@@ -34,12 +34,14 @@ module.exports = class MailSvc extends BaseSvc {
     let { address, subject, html } = params;
     this._Context.SendMail(address, subject, html, (err) => {
       if (err) {
-        this.response.status(400);
-        this.response.send(this._Context.FormatCallData(err.toString(), '发送成功'));
+        return this._Context.FormatCallData(err.toString(), '发送成功');
+        // this.response.status(400);
+        // this.response.send(this._Context.FormatCallData(err.toString(), '发送成功'));
       }
-      this.response.status(200);
+      // this.response.status(200);
       // response.json(result);
-      this.response.send(this._Context.FormatCallData(null, '发送成功'));
+      return this._Context.FormatCallData(null, '发送成功')
+      // this.response.send(this._Context.FormatCallData(null, '发送成功'));
     });
   }
 }
