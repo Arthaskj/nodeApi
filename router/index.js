@@ -62,7 +62,7 @@ router.all('*', async(request, response) => {
       response.status(200);
       // 为了通过微信公众号验证所作更改      2019/10/15 17:33:32      --柯军
       // response.json(result);
-      response.send(result);
+      response.send(result || {success: true, message: '请求成功', data: result});
     } catch (error) {
       // 请求抛出错误并停止      2019/10/12 16:19:42      --柯军
       response.status(400);
