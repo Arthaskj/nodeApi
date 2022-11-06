@@ -14,7 +14,7 @@
     "cheerio": "^1.0.0-rc.2",
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-typescript": "^5.0.1",
     "import": "0.0.6",
     "mysql": "^2.16.0",
