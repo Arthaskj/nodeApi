@@ -13,7 +13,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "gulp": "^3.9.1",
     "gulp-typescript": "^5.0.1",
     "import": "0.0.6",
